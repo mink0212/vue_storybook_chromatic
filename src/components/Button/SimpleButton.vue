@@ -26,6 +26,10 @@ export default class SimpleButton extends Vue {
                 this.outlined = true
                 this.dark = false
                 break
+            case "emphasize":
+                this.outlined = false
+                this.dark = false
+                this.color="primary"
         }
     }
     getStyle() {
@@ -33,9 +37,12 @@ export default class SimpleButton extends Vue {
         switch(this.type){
             case "inversion":
                 style += " inversion"
+            case "emphasize":
+                style += " emphasize"
         }
 
-        style += " bgcolor"
+        style += " bgcolor fontcolor"
+
         style += this.bold ? " bold": ""
         return style
 

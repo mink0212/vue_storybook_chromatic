@@ -26,8 +26,15 @@ Inversion.args = {
   text: 'インバーションボタン'
 }
 
+export const Emphasize = Template.bind({})
+Emphasize.args = {
+  type: "emphasize",
+  text: '強調ボタン'
+}
+
 export const Bold = Template.bind({})
 Bold.args = {
   bold: true,
   text: 'ボールドボタン'
 }
+

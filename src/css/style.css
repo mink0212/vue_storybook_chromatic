@@ -4,3 +4,11 @@
 .my-button.inversion.bgcolor {
     background-color: white !important;
 }
+
+.my-button.emphasize.bgcolor {
+    background-color: aquamarine !important;
+}
+
+.my-button.emphasize.fontcolor {
+    color: black !important;
+}
