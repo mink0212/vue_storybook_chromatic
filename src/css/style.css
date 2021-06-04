@@ -1,0 +1,6 @@
+.my-button.bold {
+    font-weight: 700;
+}
+.my-button.inversion.bgcolor {
+    background-color: white !important;
+}
