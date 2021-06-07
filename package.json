@@ -8,10 +8,11 @@
     "test:unit": "vue-cli-service test:unit",
     "lint": "vue-cli-service lint",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook",
-    "chromatic": "npx chromatic --project-token=44131b562750"
+    "build-storybook": "build-storybook"
   },
   "dependencies": {
+    "axios": "^0.21.1",
+    "axios-mock-adapter": "^1.19.0",
     "core-js": "^3.6.5",
     "vue": "^2.6.11",
     "vue-class-component": "^7.2.3",

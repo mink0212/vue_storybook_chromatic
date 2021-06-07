@@ -1,6 +1,13 @@
 // Button.stories.js
 
-import MyPage from '../../views/MyPage';
+import  MockAdapter from 'axios-mock-adapter';
+import axiosInstance from '../../utils/axios'
+
+import MyPage from '../../views/MyPage.vue';
+
+const mock = new MockAdapter(axiosInstance);
+
+mock.onGet('http://localhost/v1/apt/test').reply(200, {"sample": "OK"})
 
 export default {
   component: MyPage,
