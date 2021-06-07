@@ -10,7 +10,7 @@ export default class SimpleButton extends Vue {
     @Prop({ type: String, default: ""}) text!: string
     @Prop({ type: String, default: "primary"}) color!: string
     @Prop({ type: String, default: "primary"}) type!: string
-    @Prop({ type: String }) size!: string
+    @Prop({ type: String, default: "" }) size!: string
     @Prop({ type: Boolean }) bold!: boolean
 
     outlined = false
@@ -37,8 +37,10 @@ export default class SimpleButton extends Vue {
         switch(this.type){
             case "inversion":
                 style += " inversion"
+                break
             case "emphasize":
                 style += " emphasize"
+                break
         }
 
         style += " bgcolor fontcolor"
