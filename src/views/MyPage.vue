@@ -4,6 +4,9 @@
             <simple-button type="primary" text="プライマリーボタン"/>
         </v-col>
         <v-col>
+            <simple-button color="error" text="太字ボタン" bold/>
+        </v-col>
+        <v-col>
             <simple-button type="inversion" color="success" text="反転色付きボタン"/>
         </v-col>
     </v-row>
