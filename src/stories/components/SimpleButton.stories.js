@@ -1,6 +1,6 @@
 // Button.stories.js
 
-import SimpleButton from './SimpleButton.vue';
+import SimpleButton from '../../components/Button/SimpleButton';
 
 export default {
   component: SimpleButton,
